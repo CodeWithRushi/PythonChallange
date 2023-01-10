@@ -1,0 +1,42 @@
+********DAY 2********
+Python coding question:
+LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even, but returns the greater if one or both numbers are odd.
+Desired output:
+lesser_of_two_evens(2,4)---> 2
+lesser_of_two_evens(2,3)---> 3
+lesser_of_two_evens(3,4)---> 4
+*********************
+
+
+def lesser_of_two_evens(num1,num2):
+	if(num1%2==0 and num2 %2==0):
+		if(num1<num2):
+			print(num1)
+		else:
+			print(num2)
+	else:
+		if(num1>num2):
+			print(num1)
+		else:
+			print(num2)
+print("Enter Two Numbers")
+num1=int(input())
+num2=int(input())#num1,num2=nums
+lesser_of_two_evens(num1,num2)
+
+
+o/p:-
+
+Enter Two Numbers
+3
+4
+
+4
+
+
+Enter Two Numbers
+2
+4
+
+2
+
