@@ -1,0 +1,65 @@
+'''
+Python coding question:
+
+
+
+Write a function that takes in a list of integers and returns True if it contains 007 in order
+
+ spy_game([1,2,4,0,0,7,5]) --> True
+
+ spy_game([1,0,2,4,0,5,7]) --> True
+
+ spy_game([1,7,2,0,4,5,0]) --> False
+
+
+
+
+
+'''
+
+
+
+def spy_game(list1):
+    list2=[0,0,7]
+    pos=0
+    for i in list1:
+        if(i==list2[pos] and pos<len(list2)):
+            pos=pos+1
+        if(pos==3):
+            break
+    if(pos==3):
+        print("True")
+    else:
+        print("False")
+            
+print("How many elements you want to enter")
+total=int(input())
+list1=[int(input()) for i in range(total)]
+spy_game(list1)
+
+
+output:-
+
+How many elements you want to enter
+7
+1
+2
+7
+0
+6
+0
+7
+True
+
+
+
+How many elements you want to enter
+7
+1
+4
+6
+0
+7
+0
+6
+False
