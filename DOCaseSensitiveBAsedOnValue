@@ -1,0 +1,36 @@
+'''
+
+Python coding question:
+
+Define a function called myfunc that takes in a string,
+and returns a matching string where every even letter is uppercase, and every odd letter is lowercase. 
+Desired output:
+myfunc('aNiMaL')-->True
+
+
+'''
+
+def myfunc(str):
+    orignal=str
+    result=''.join([x.upper() if ord(x)%2==0 else x for x in str])
+    print("original String ------>",orignal)
+    print("After Modifying String ----->",result)
+    '''for  i in result:
+        print(ord(i))'''
+    if(orignal==result):
+        print("true")
+    else:
+        print("False")
+    
+print("Enter a String")
+str=input()
+myfunc(str)
+
+
+output:-
+  
+Enter a String
+aNiMaL
+original String ------> aNiMaL
+After Modifying String -----> aNiMaL
+true
