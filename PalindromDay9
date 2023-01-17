@@ -1,0 +1,16 @@
+'''
+********DAY 9********
+Python coding question:
+
+Write a Python function that checks whether a word or phrase is palindrome or not.
+Example of Palindrome:
+Hannah
+Anna
+
+'''
+
+
+print("Enter a Sentense or word")
+original=input()
+after_rev=original[::-1]
+print(original==after_rev)
