@@ -1,0 +1,38 @@
+'''
+Python coding question:
+
+Write a Python function that accepts a string and calculates the number of upper case letters and lower case letters.
+
+Sample String : 'Hello Mr. Rogers, how are you this fine Tuesday?'
+Expected Output : 
+No. of Upper case characters : 4
+No. of Lower case Characters : 33
+
+'''
+
+
+print("Enter String")
+str=input()
+Upper=0
+lower=0
+for i in str:
+    tmp=ord(i)
+    if(tmp>=65 and tmp<=90):
+        for j in range(65,91):
+            if tmp==j:
+                Upper=Upper+1
+            
+    if(tmp>=97 and tmp<=122):
+        for j in range(97,122):
+            if tmp==j:
+                lower=lower+1
+      
+print("Total Upper Characters are: ",int(Upper)," and Total Lower Characters are : ",int(lower))
+
+
+
+output:-
+
+Enter String
+Hello Mr. Rogers, how are you this fine Tuesday?
+Total Upper Characters are:  4  and Total Lower Characters are :  33
