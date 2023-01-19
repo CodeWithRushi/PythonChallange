@@ -1,0 +1,34 @@
+'''
+*******DAY 13********
+Python coding question:
+Write a function that capitalizes the first and fifth letters of a name.
+
+TC 1:capitalize("Rushabh")
+ 'RushAbh'
+TC 2:capitalize("act")
+  'Name is too short!'
+
+'''
+
+
+def capitalizes(str):
+    str2=""
+    if(len(str)>=5):
+        for i in range(len(str)):
+            if(i==0 or i==4):
+                str2=str2+str[i].capitalize()
+            else:
+                str2=str2+str[i]
+        print(str2)
+    else:
+        print("The Name is Too Short")
+    
+print("Enter Your Name ")
+str=input()
+capitalizes(str)
+
+
+output:-
+Enter Your Name 
+Rushabh
+RushAbh
